@@ -5,4 +5,8 @@ package com.example.lili.myfirstdemo;
  */
 
 public class MyNewClass {
+
+    private int i;
+
+
 }
