@@ -13,17 +13,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        myLoadingView = findViewById(R.id.myLoadingView);
-        myLoadingView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    myLoadingView.startAnimatoingValue(100);
-                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    myLoadingView.stopAnimation();
-                }
-                return true;
-            }
-        });
+//        myLoadingView = findViewById(R.id.myLoadingView);
+//        myLoadingView.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View view, MotionEvent motionEvent) {
+//                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+//                    myLoadingView.startAnimatoingValue(100);
+//                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+//                    myLoadingView.stopAnimation();
+//                }
+//                return true;
+//            }
+//        });
     }
 }

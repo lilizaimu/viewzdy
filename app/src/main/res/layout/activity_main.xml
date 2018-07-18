@@ -6,22 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.example.lili.myfirstdemo.MainActivity">
 
-    <com.example.lili.myfirstdemo.MyLoadingView
-        android:id="@+id/myLoadingView"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:background="#ff0"
-        app:colorAll="#f0f"
-        app:colorSecond="#333" />
+    <!--<com.example.lili.myfirstdemo.MyLoadingView-->
+    <!--android:id="@+id/myLoadingView"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:background="#ff0"-->
+    <!--app:colorAll="#f0f"-->
+    <!--app:colorSecond="#333" />-->
 
-    <com.example.lili.myfirstdemo.MyProgressBar
-        android:id="@+id/myprogressbar"
-        android:layout_width="320dp"
-        android:layout_height="300dp"
-        app:circleWidth="10dp"
-        app:mSpeed="2000"
-        app:firstColor="#f30"
-        app:secondColor="#0aa"
-        android:layout_below="@+id/myLoadingView" />
+    <!--<com.example.lili.myfirstdemo.MyProgressBar-->
+    <!--android:id="@+id/myprogressbar"-->
+    <!--android:layout_width="320dp"-->
+    <!--android:layout_height="300dp"-->
+    <!--app:circleWidth="10dp"-->
+    <!--app:mSpeed="2000"-->
+    <!--app:firstColor="#f30"-->
+    <!--app:secondColor="#0aa"-->
+    <!--android:layout_below="@+id/myLoadingView" />-->
+
+
+    <com.example.lili.myfirstdemo.MySoundView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:circleWidth="5dp"
+        app:count="10"
+        app:firstColor="#f0f"
+        app:secondColor="#f00" />
 
 </RelativeLayout>
