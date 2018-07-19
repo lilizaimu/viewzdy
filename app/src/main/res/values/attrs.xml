@@ -7,6 +7,7 @@
     <attr name="circleWidth" format="dimension"></attr>
     <attr name="firstColor" format="color"></attr>
     <attr name="secondColor" format="color"></attr>
+    <attr name="count" format="integer"></attr>
 
     <declare-styleable name="MyLoadingView">
         <attr name="colorAll"></attr>
@@ -29,7 +30,16 @@
         <attr name="firstColor"></attr>
         <attr name="secondColor"></attr>
         <attr name="circleWidth"></attr>
-        <attr name="count" format="integer"></attr>
+        <attr name="count"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="GestureViewGroup">
+        <attr name="tryTimes" format="integer"></attr>
+        <attr name="count"></attr>
+        <attr name="colorInterNoFinger" format="color"></attr>
+        <attr name="colorOuterNoFinger" format="color"></attr>
+        <attr name="colorFingerUp" format="color"></attr>
+        <attr name="colorFingerOn" format="color"></attr>
     </declare-styleable>
 
 </resources>
