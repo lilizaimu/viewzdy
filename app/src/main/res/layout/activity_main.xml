@@ -63,16 +63,29 @@
     <!--</com.example.lili.myfirstdemo.MyMarginViewGroup>-->
 
 
-    <com.example.lili.myfirstdemo.GestureViewGroup
-        android:id="@+id/gesture_vp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:colorFingerOn="#f0f"
-        app:colorFingerUp="#f00"
-        app:colorInterNoFinger="#00f"
-        app:colorOuterNoFinger="#99f"
-        app:count="4"
-        app:tryTimes="3"></com.example.lili.myfirstdemo.GestureViewGroup>
+    <!--<com.example.lili.myfirstdemo.GestureViewGroup-->
+    <!--android:id="@+id/gesture_vp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:colorFingerOn="#f0f"-->
+    <!--app:colorFingerUp="#f00"-->
+    <!--app:colorInterNoFinger="#00f"-->
+    <!--app:colorOuterNoFinger="#99f"-->
+    <!--app:count="4"-->
+    <!--app:tryTimes="3"></com.example.lili.myfirstdemo.GestureViewGroup>-->
 
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show" />
+
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show"
+        android:text="hide" />
 
 </RelativeLayout>
