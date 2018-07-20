@@ -4,10 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    MyLoadingView myLoadingView;
+    //    MyLoadingView myLoadingView;
+    GestureViewGroup gesture_vp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +27,19 @@ public class MainActivity extends AppCompatActivity {
 //                return true;
 //            }
 //        });
+        gesture_vp = findViewById(R.id.gesture_vp);
+        gesture_vp.setGestureListener(new GestureViewGroup.GestureListener() {
+            @Override
+            public void onAnswerRight() {
+                Toast.makeText(MainActivity.this, "你已经成功了", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onUnmatchedExceedBoundary() {
+                Toast.makeText(MainActivity.this, "你没机会了", Toast.LENGTH_SHORT).show();
+            }
+        });
+//        int[] answer={1,2,3,7,6,5};
+//        gesture_vp.setAnswer(answer);
     }
 }

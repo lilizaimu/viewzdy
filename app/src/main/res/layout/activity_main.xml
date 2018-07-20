@@ -34,39 +34,45 @@
     <!--app:secondColor="#f00" />-->
 
 
-    <View
-        android:layout_alignParentRight="true"
-        android:background="#f0f"
-        android:layout_width="40dp"
-        android:layout_height="120dp"/>
+    <!--<com.example.lili.myfirstdemo.MyMarginViewGroup-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
 
-    <com.example.lili.myfirstdemo.MyMarginViewGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <!--<TextView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="#f0f" />-->
 
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:background="#f0f" />
+    <!--<View-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:background="#f00" />-->
 
-        <View
-            android:layout_marginBottom="40dp"
-            android:layout_marginLeft="60dp"
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:background="#f00" />
+    <!--<TextView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:background="#ff0" />-->
 
-        <TextView
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:background="#ff0" />
+    <!--<TextView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:background="#00f" />-->
 
-        <TextView
-            android:layout_width="20dp"
-            android:layout_height="60dp"
-            android:background="#00f" />
+    <!--</com.example.lili.myfirstdemo.MyMarginViewGroup>-->
 
-    </com.example.lili.myfirstdemo.MyMarginViewGroup>
+
+    <com.example.lili.myfirstdemo.GestureViewGroup
+        android:id="@+id/gesture_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:colorFingerOn="#f0f"
+        app:colorFingerUp="#f00"
+        app:colorInterNoFinger="#00f"
+        app:colorOuterNoFinger="#99f"
+        app:count="4"
+        app:tryTimes="3"></com.example.lili.myfirstdemo.GestureViewGroup>
 
 
 </RelativeLayout>
