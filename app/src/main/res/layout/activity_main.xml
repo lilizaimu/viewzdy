@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.lili.myfirstdemo.MainActivity">
 
+
+    <!--<Button-->
+    <!--android:id="@+id/btn"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
     <!--<com.example.lili.myfirstdemo.MyLoadingView-->
     <!--android:id="@+id/myLoadingView"-->
     <!--android:layout_width="300dp"-->
@@ -74,18 +80,15 @@
     <!--app:count="4"-->
     <!--app:tryTimes="3"></com.example.lili.myfirstdemo.GestureViewGroup>-->
 
+    <!--<EditText-->
+    <!--android:id="@+id/et"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
 
-    <Button
-        android:id="@+id/btn_show"
-        android:layout_width="match_parent"
+    <com.example.lili.myfirstdemo.MySmsView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="show" />
-
-    <Button
-        android:id="@+id/btn_hide"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_show"
-        android:text="hide" />
+        android:layout_centerHorizontal="true"></com.example.lili.myfirstdemo.MySmsView>
 
 </RelativeLayout>

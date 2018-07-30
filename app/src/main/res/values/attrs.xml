@@ -42,4 +42,12 @@
         <attr name="colorFingerOn" format="color"></attr>
     </declare-styleable>
 
+    <declare-styleable name="MySmsView">
+        <attr name="count"></attr>
+        <attr name="childWidth" format="dimension" />
+        <attr name="childPadding" format="dimension" />
+        <attr name="child_normal_background" />
+        <attr name="child_foces_background" />
+    </declare-styleable>
+
 </resources>
