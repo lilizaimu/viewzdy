@@ -15,6 +15,10 @@ public class FlowLayout extends ViewGroup {
 
 
     ArrayList<View> views;
+
+    float maxLineWidth;
+    float maxLineHeight;
+
     public FlowLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -22,6 +26,23 @@ public class FlowLayout extends ViewGroup {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+
+        int count = getChildCount();
+
+        float lineHeight;
+        float lineWidth;
+        for (int i = 0; i < count; i++) {
+            View child = getChildAt(i);
+            measureChild(child, widthMeasureSpec, heightMeasureSpec);
+            MarginLayoutParams layoutParams= (MarginLayoutParams) child.getLayoutParams();
+            
+        }
+
     }
 
     @Override
